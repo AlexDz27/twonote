@@ -28,8 +28,10 @@ function draw(e) {
 
   // Set pen styles
   ctx.lineWidth = 5;
-  ctx.lineCap = 'round';
   ctx.strokeStyle = '#c0392b';
+  // // make lines more smooth
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round'
 
   ctx.moveTo(penPosition.x, penPosition.y); // from
   setPenPosition(e);
@@ -38,6 +40,8 @@ function draw(e) {
   ctx.stroke() // draw!
 }
 function setPenPosition(e) {
+  if (Math.abs(e.clientX - penPosition.x) < 3) return // Ref 2
+
   penPosition.x = e.clientX
   penPosition.y = e.clientY
 }
