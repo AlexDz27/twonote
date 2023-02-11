@@ -40,8 +40,6 @@ function draw(e) {
   ctx.stroke() // draw!
 }
 function setPenPosition(e) {
-  if (Math.abs(e.clientX - penPosition.x) < 3) return // Ref 2
-
   penPosition.x = e.clientX
   penPosition.y = e.clientY
 }
