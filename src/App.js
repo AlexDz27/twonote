@@ -4,10 +4,14 @@ import Header from './Header'
 
 function App() {
   const [mode, setMode] = useState('drawing')
+  const [pen, setPen] = useState('red')
 
   return (
     <div className="App">
-      <Header mode={mode} />
+      <Header
+        mode={mode} setMode={setMode}
+        pen={pen} setPen={setPen}
+      />
       <Canvas />
     </div>
   )
