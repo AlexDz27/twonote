@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 41px; /* 40px + 1 to accommodate header's border TODO: maybe del or rewrite */
+}
+
+.header {
+  position: fixed;
+  outline: 1px solid salmon;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+canvas {
+  border: 1px solid black;
+}
